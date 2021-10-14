@@ -1,0 +1,25 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+   
+
+    @font-face {
+        font-family: 'Verdana';
+        src: local('Verdana'),
+            url('../../assets/font/Verdana.ttf') format('truetype');
+        font-style: normal;
+      }
+    
+     $Verdana: 'Verdana';
+
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    body{
+      font-family: $Verdana;
+    }
+ 
