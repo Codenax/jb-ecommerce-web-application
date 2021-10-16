@@ -153,6 +153,7 @@
         .cart-icon:hover .cart-contain-area {
           visibility: visible;
           opacity: 1;
+          z-index: 999;
           transition: all 0.3s;
         }
         a {
@@ -290,7 +291,8 @@
               display: block;
               text-decoration: none;
               color: $text-color;
-              font-size: 1.5rem;
+              font-size: 1.3rem;
+              font-weight: 600;
               padding: 0.5rem 0;
               text-align: center;
               border-bottom: solid 0.1rem $text-color-2;
@@ -322,6 +324,7 @@
         .user-profile-area:hover .user-account-area{
             visibility: visible;
             opacity: 1;
+            z-index: 999;
             transition: all 0.3s; 
           }
       }
@@ -331,5 +334,87 @@
     height: 3rem;
     background-color: $white-2;
     color: $white;
+    .navbar{
+        padding: 0;
+        align-items: center;
+        height: 100%;
+    }
+    .left-side{ 
+       a{
+           text-decoration: none;
+           display: block;
+           font-size: 1.3rem;
+           color: $text-color;
+           text-transform: uppercase;
+           padding-right: 2rem;
+           font-weight: 500;
+           i{
+               font-size: 1.4rem;
+               margin-left: .4rem;   
+           }
+           transition: all .2s;
+       } 
+       a:hover{
+           color: $hover-c;
+           transition: all .2s;
+       }
+       .product-menu-area{
+           position: relative;
+          .mega-menu-area{
+            position: absolute;
+              background-color: $white;
+              width: 50rem;
+              padding: 2rem 2rem;
+              box-shadow: $box-shadow-card;
+              top: 28px;
+              visibility: hidden;
+              opacity: 0;
+              transition: all 0.3s;
+    
+              .category-col{
+                  a{
+                      display: block;
+                      padding-right: 0rem;
+                      padding: 1rem 0;
+                      font-size: 1.2rem;
+                      text-transform: uppercase;
+                      color: $text-color-2;
+                      transition: all .2s;
+                  }
+                  a:hover{
+                    color: $hover-c;
+                    transition: all .2s;
+                }
+                  
+                  img{
+                      width: 20rem;
+                      height: auto;
+                  }
+              }
+          } 
+          .mega-menu-area::before {
+            content: "";
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background-color: $white;
+            top: -11px;
+            left:68px;
+            // box-shadow: $box-shadow-card;
+            border: solid rgb(216, 216, 216) 0.1rem;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+          }
+
+       }
+       .product-menu-area:hover .mega-menu-area{
+        visibility: visible;
+        opacity: 1;
+        z-index: 999;
+        transition: all 0.3s; 
+
+       }
+    }
   }
 }
