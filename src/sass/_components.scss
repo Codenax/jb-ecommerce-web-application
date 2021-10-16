@@ -1,1 +1,69 @@
- 
+.main-top-bar {
+  height: 10.2rem;
+  background-color: $white;
+  .top-bar {
+    background-color: $primary;
+    height: 3rem;
+    color: $white;
+    .top-left-side {
+      .social-icon {
+        width: 7rem;
+        a {
+          color: $white;
+          i {
+            font-size: 1.8rem;
+          }
+          transition: all .3s;
+        }
+        a:hover{
+            color: $hover-c;
+            transition: all .3s;
+        }
+      }
+    }
+    .top-right-side{
+        .login-area {
+            //width: 35rem;
+            a{
+
+                color: $white;
+                padding-left: 1rem;
+                border-left: solid $white .2rem;
+                margin-left: 1rem;
+                transition: all .3s;
+                i{
+                    font-size: 1.6rem;
+                    margin-top: .2rem;
+                    margin-right: .3rem;
+                }
+                span{
+                    font-size: 1.3rem;
+                   
+                }
+                .strong{
+                    font-weight: 700;
+                }
+                
+            }
+            a:hover{
+                color: $hover-c;
+                text-decoration: none;
+                transition: all .3s;
+            }
+            a:first-child{
+                border-left: none;
+            }
+            
+        }
+    }
+  }
+  .search-bar {
+    height: 6rem;
+    background-color: $white;
+  }
+  .menu-bar {
+    height: 3rem;
+    background-color: $white-2;
+    color: $white;
+  }
+}
