@@ -125,13 +125,14 @@
       .cart-area {
         width: 25%;
         .cart-icon {
+          position: relative;
           a {
             position: relative;
             display: inline-block;
             i {
               font-size: 3rem;
               color: $primary;
-             text-shadow: $box-shadow-icon;
+              text-shadow: $box-shadow-icon;
             }
             .item-count {
               position: absolute;
@@ -149,27 +150,180 @@
             }
           }
         }
-        a{
-            text-decoration: none;
+        .cart-icon:hover .cart-contain-area {
+          visibility: visible;
+          opacity: 1;
+          transition: all 0.3s;
         }
-        .user-area{
-         align-items: center;
-            .profile-pic{
-                img{
-                    width: 3rem;
-                    height: 3rem;
-                    border-radius: 3rem;
-                    border: solid $primary .2rem;
+        a {
+          text-decoration: none;
+        }
+
+        .cart-contain-area {
+          position: absolute;
+          background-color: $white;
+          height: auto;
+          width: 40rem;
+          padding: 1.5rem 1rem;
+          right: -15px;
+          top: 40px;
+          box-shadow: $box-shadow-card;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.3s;
+
+          .header-area {
+            color: $text-color-2;
+            margin-bottom: 1rem;
+          }
+          ul {
+            a {
+              display: block;
+              text-decoration: none;
+              color: $text-color;
+            }
+            a:first-child {
+              li {
+                border-top: solid 0.1rem $text-color-2;
+              }
+            }
+            a:hover {
+              li {
+                background-color: $white-2;
+                transition: all 0.3s;
+              }
+            }
+            li {
+              border: solid 0.1rem $text-color-2;
+              border-top: 0;
+              padding: 0.6rem 0;
+              border-left: 0;
+              border-right: 0;
+              transition: all 0.3s;
+              .product-details {
+                width: 100%;
+                height: auto;
+                align-items: center;
+
+                img {
+                  width: 4rem;
+                  height: 4rem;
                 }
+                .product-name {
+                  overflow: hidden;
+                  h2 {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-left: 1rem;
+                  }
+                }
+                .product-price {
+                  h2 {
+                    margin-left: 1rem;
+                    margin-right: 0.2rem;
+                    color: $secondary;
+                  }
+                }
+              }
             }
-            .user-name{
-                font-size: 1.6rem;
-                color: $text-color;
-                margin-left: .5rem;
-
-
+            li::marker {
+              content: none;
             }
+          }
+          .footer-area {
+            padding-top: 1rem;
+            .primary-btn {
+              margin-right: 0;
+            }
+          }
         }
+        .cart-contain-area::before {
+          content: "";
+          position: absolute;
+          width: 2rem;
+          height: 2rem;
+          background-color: $white;
+          top: -11px;
+          right: 20px;
+          // box-shadow: $box-shadow-card;
+          border: solid rgb(216, 216, 216) 0.1rem;
+          border-right: 0;
+          border-bottom: 0;
+          transform: rotate(45deg);
+        }
+        .user-profile-area {
+            position: relative;
+          .user-area {
+            align-items: center;
+            
+            .profile-pic {
+              img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 3rem;
+                border: solid $primary 0.2rem;
+              }
+            }
+            .user-name {
+              font-size: 1.6rem;
+              color: $text-color;
+              margin-left: 0.5rem;
+            }
+          }
+        
+          .user-account-area {
+            position: absolute;
+            width: 20rem;
+            height: auto;
+            padding: 1.5rem 1rem;
+            background-color: $white;
+            box-shadow: $box-shadow-card;
+            top:40px;
+            right: 0;
+           
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s;
+
+            a {
+              display: block;
+              text-decoration: none;
+              color: $text-color;
+              font-size: 1.5rem;
+              padding: 0.5rem 0;
+              text-align: center;
+              border-bottom: solid 0.1rem $text-color-2;
+              transition: all .3s;
+            }
+            a:last-child {
+                border-bottom: 0;
+              }
+              a:hover{
+                  background-color: $white-2;
+                  transition: all .3s;
+              }
+          }
+          .user-account-area::before {
+            content: "";
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background-color: $white;
+            top: -11px;
+            left: 68px;
+            // box-shadow: $box-shadow-card;
+            border: solid rgb(216, 216, 216) 0.1rem;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+          }
+        }
+        .user-profile-area:hover .user-account-area{
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.3s; 
+          }
       }
     }
   }
