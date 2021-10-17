@@ -1,0 +1,139 @@
+.product-card {
+    position: relative;
+  width: 20rem;
+  height: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: $box-shadow-card-2;
+  border: solid 0.1rem $border-color;
+  border-bottom: solid 0.5rem $primary;
+  background-color: $white;
+  transition: all 0.2s;
+  margin-bottom: 2rem;
+  .product-image-area { 
+    width: 100%;
+    height: 20rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .product-heading {
+    margin: 2rem 0;
+    padding: 0 0.5rem;
+    height: 4rem;
+
+    h4 {
+      color: $text-color;
+      line-height: 20px;
+      display: -webkit-box;
+      max-width: 100%;
+      margin: 0 auto;
+      -webkit-line-clamp: 2;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .product-price {
+    padding: 0 0.5rem;
+    .price {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: $text-color-2;
+      line-height: 20px;
+    }
+    .before-price {
+      position: relative;
+      padding-left: 0.5rem;
+      strong {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-left: 0.1rem;
+      }
+    }
+    .before-price::after {
+      content: "";
+      position: absolute;
+      border: solid 0.01rem $border-color;
+      background-color: $border-color;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1;
+    }
+    .after-price {
+      color: $secondary-2;
+      margin-left: 1rem;
+      strong {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-left: 0.1rem;
+      }
+    }
+  }
+  .p-card-footer {
+    padding: 1rem 0.5rem;
+    align-items: center;
+    .rating {
+      align-items: center;
+      img {
+        width: 7.5rem;
+        height: auto;
+      }
+      .p-sold-count {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 0.2rem;
+        color: $text-color;
+      }
+    }
+    .shop-location {
+      h4 {
+        font-size: 1.3rem;
+        color: $text-color-3;
+      }
+    }
+  }
+
+  .special-tag {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: #40ceb2c5;
+    border-bottom-right-radius: 1rem;
+    padding: .1rem .6rem;
+    margin: 0;
+    box-shadow: $box-shadow-card-2;
+    opacity: .8;
+    .p-special-tag {
+      color: $white;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+     
+    } 
+  }
+  .offer-percent{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .9rem .7rem;
+      background-color: #ff4d008f;
+      color: $white;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border-bottom-left-radius: 2rem;
+      line-height: 11px;
+
+  }
+}
+
+.product-card:hover {
+  border-color: $secondary-2;
+  box-shadow: $box-shadow-card-hover;
+  transform: translateY(-2px);
+  transition: all 0.2s;
+}
