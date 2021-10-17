@@ -206,20 +206,20 @@
                   <a href="#">category-12</a>
                 </div>
                 <div class="category-col">
-           
+
                   <img src="assets/images/menu_banner_right_2.png" alt="">
-                
+
                 </div>
               </div>
             </div>
-            
+
             <a href="#">Special Offer</a>
             <a href="#">About Us</a>
           </div>
           <div class="right-side d-flex">
 
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -232,12 +232,119 @@
 
 
   <!-- main-section start-->
-  <section class="main-section">
+  <section class="main-section-search-result">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
+      <div class="row margin-none">
+        <div class="search-filter">
+          <div class="sub-section category">
+            <!--Accordion wrapper start-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+              <!-- Accordion card -->
+              <div class="card">
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="heading-1">
+                  <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse-1" aria-expanded="true"
+                    aria-controls="collapse-1">
+                    <div class="heading d-flex justify-content-between">
+                      <h3>Category</h3>
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapse-1" class="collapse show" role="tabpanel" aria-labelledby="heading-1"
+                  data-parent="#accordionEx">
+                  <div class="card-body">
+                    <div class="category-item-area search-option">
+                      <a href="#">category-1 <span class="item-count">(45)</span></a>
+                      <a href="#">category-2 <span class="item-count">(45)</span></a>
+                      <a href="#">category-3 <span class="item-count">(45)</span></a>
+                      <a href="#">category-4 <span class="item-count">(45)</span></a>
+                      <a href="#">category-5 <span class="item-count">(45)</span></a>
+                      <a href="#">category-6 <span class="item-count">(45)</span></a>
+                      <a href="#">category-7 <span class="item-count">(45)</span></a>
+                      <a href="#">category-8 <span class="item-count">(45)</span></a>
+                      <a href="#">category-9 <span class="item-count">(45)</span></a>
+                      <a href="#">category-10 <span class="item-count">(45)</span></a>
+                      <a href="#">category-11 <span class="item-count">(45)</span></a>
+                      <a href="#">category-12 <span class="item-count">(45)</span></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
+            </div>
+
+            <!-- Accordion wrapper end -->
+          </div>
+          <div class="sub-section price">
+            <div class="heading">
+              <h3>Price Rang</h3>
+            </div>
+            <div class="search-option">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                   
+                    <input type="number" class="form-control" id="inputLowValue" placeholder="From Bdt">
+                  </div>
+                  <div class="form-group col-md-6">
+                  
+                    <input type="number" class="form-control" id="inputHighValue" placeholder="To Bdt">
+                  </div>
+                </div>
+                <button class="primary-btn">Find</button>
+              </form>
+             
+            </div>
+          </div>
+          <div class="sub-section rating">
+            <div class="heading">
+              <h3>Rating</h3>
+            </div>
+            <div class="search-option">
+              <form class="was-validated">
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked"
+                    required>
+                  <label class="custom-control-label" for="customControlValidation1"><img
+                      src="assets/images/review-image/5star.png" alt=""></label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked"
+                    required>
+                  <label class="custom-control-label" for="customControlValidation2"><img
+                      src="assets/images/review-image/4star.png" alt=""></label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked"
+                    required>
+                  <label class="custom-control-label" for="customControlValidation3"><img
+                      src="assets/images/review-image/3star.png" alt=""></label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked"
+                    required>
+                  <label class="custom-control-label" for="customControlValidation4"><img
+                      src="assets/images/review-image/2star.png" alt=""></label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="customControlValidation5" name="radio-stacked"
+                    required>
+                  <label class="custom-control-label" for="customControlValidation5"><img
+                      src="assets/images/review-image/1star.png" alt=""></label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="sub-section payment-option">
+            <button class="primary-btn">Clear all</button>
+
+          </div>
 
         </div>
+        <div class="search-filter-product-area"></div>
       </div>
     </div>
   </section>

@@ -1,0 +1,112 @@
+section {
+  padding: 3rem 0;
+}
+
+.main-section-search-result {
+  .search-filter {
+    flex: 0 0 20rem;
+    min-width: 0;
+    margin: 0 1.25rem 1.25rem 0;
+    background-color: $white;
+    .category {
+      .accordion {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .card {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          .card-header {
+            background-color: $white;
+            border: 0;
+            margin: 0;
+            padding: 0;
+          }
+          .card-body {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .sub-section {
+      border: solid 0.1rem $border-color;
+      border-bottom: 0;
+      padding: 2rem 1rem;
+      .heading {
+        align-items: center;
+        color: $text-color;
+        margin-bottom: 1rem;
+        h3 {
+          text-transform: uppercase;
+        }
+        i {
+          font-size: 1.6rem;
+          color: $secondary;
+        }
+      }
+      .search-option {
+        a {
+          color: $text-color-3;
+          font-size: 1.4rem;
+          display: block;
+          text-transform: capitalize;
+          font-weight: 500;
+          letter-spacing: 0.05rem;
+          line-height: 2.5rem;
+          .item-count {
+            margin-left: 0.5rem;
+            color: $primary;
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+        a:hover {
+          color: $secondary;
+          background-color: $white-2;
+          .item-count {
+            color: $secondary;
+          }
+        }
+        .custom-control-label {
+          cursor: pointer;
+          margin-bottom: 1rem;
+          img {
+            width: 10rem;
+          }
+        }
+        input {
+          font-size: 1.2rem;
+          color: $text-color-3;
+          font-weight: 500;
+          margin: .8rem 0;
+        }
+        .primary-btn{
+            font-size: 1.4rem;
+            padding: .3rem 6rem;
+            width: 100%;
+
+        }
+      }
+      .primary-btn{
+        font-size: 1.4rem;
+        padding: .3rem 0rem;
+        width: 100%;
+        text-transform: uppercase;
+
+    }
+    }
+    .sub-section:last-child {
+      border-bottom: solid 0.1rem $border-color;
+    
+      
+    }
+  }
+
+  .search-filter-product-area {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+  }
+}
