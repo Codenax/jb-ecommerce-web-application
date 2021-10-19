@@ -1,10 +1,8 @@
-section {
-  padding: 3rem 0;
-}
 
 .main-section-search-result {
+  padding: 3rem 0;
   .search-filter {
-    flex: 0 0 22rem;
+    flex: 0 0 20rem;
     min-width: 0;
    /// margin: 0 1.25rem 1.25rem 0;
    margin-right: 2rem;
@@ -43,6 +41,8 @@ section {
         margin-bottom: 1rem;
         h3 {
           text-transform: uppercase;
+          font-size: 1.4rem;
+          font-weight: 600;
         }
         i {
           font-size: 1.6rem;

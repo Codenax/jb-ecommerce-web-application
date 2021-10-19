@@ -2,6 +2,9 @@
 // ---------------- heading section start-------------------///
 .main-top-bar {
     background-color: $white;
+   position: fixed;
+   width: 100%;
+   z-index: 99999;
     .top-bar {
       background-color: $primary;
       height: 3rem;
@@ -127,6 +130,7 @@
           width: 25%;
           .cart-icon {
             position: relative;
+            padding: 16px 0;
             a {
               position: relative;
               display: inline-block;
@@ -167,9 +171,10 @@
             height: auto;
             width: 35rem;
             padding: 1.5rem 1rem;
-            right: -15px;
-            top: 40px;
+            right: -16px;
+            top: 55px;
             box-shadow: $box-shadow-card;
+            border-bottom: solid .5rem $primary;
             visibility: hidden;
             opacity: 0;
             transition: all 0.3s;
@@ -233,12 +238,6 @@
                 content: none;
               }
             }
-            .footer-area {
-              padding-top: 1rem;
-              .primary-btn {
-                margin-right: 0;
-              }
-            }
           }
           .cart-contain-area::before {
             content: "";
@@ -255,86 +254,113 @@
             transform: rotate(45deg);
           }
           .user-profile-area {
-              position: relative;
+            padding: 16px 0;
+            cursor: pointer;
+           
             .user-area {
               align-items: center;
               
               .profile-pic {
+               position: relative;
                 img {
                   width: 3rem;
                   height: 3rem;
                   border-radius: 3rem;
                   border: solid $primary 0.2rem;
                 }
+              
+              }
+              .profile-pic:after{
+                content: "";
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                background-color: $white;
+                bottom: -23px;
+                left: 5px;
+                z-index: 9999;
+                // box-shadow: $box-shadow-card;
+                border: solid rgb(216, 216, 216) 0.1rem;
+                border-right: 0;
+                border-bottom: 0;
+                transform: rotate(45deg);
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s;
               }
               .user-name {
-                font-size: 1.4rem;
-                color: $text-color-3;
                 margin-left: 0.5rem;
+                position: relative;
+                span{
+                  color: $text-color;
+                  font-size: 1.4rem;
+                  font-weight: 500;
+                }
+                .user-account-area {
+                  position: absolute;
+                  width: 20rem;
+                  height: auto;
+                  padding: 1.5rem 1rem;
+                  background-color: $white;
+                  box-shadow: $box-shadow-card;
+                  top:40px;
+                  right:0;
+                  border-bottom: solid .5rem $primary;
+                  visibility: hidden;
+                  opacity: 0;
+                  transition: all 0.3s;
+      
+                  a {
+                    display: block;
+                    text-decoration: none;
+                    color: $text-color-3;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    padding: 0.5rem 0;
+                    text-align: center;
+                    border-bottom: solid 0.1rem $text-color-2;
+                    transition: all .3s;
+                  }
+                  a:last-child {
+                      border-bottom: 0;
+                    }
+                    a:hover{
+                        background-color: $white-2;
+                        transition: all .3s;
+                    }
+                }
+                
               }
             }
           
-            .user-account-area {
-              position: absolute;
-              width: 20rem;
-              height: auto;
-              padding: 1.5rem 1rem;
-              background-color: $white;
-              box-shadow: $box-shadow-card;
-              top:40px;
-              right: 0;
-             
-              visibility: hidden;
-              opacity: 0;
-              transition: all 0.3s;
-  
-              a {
-                display: block;
-                text-decoration: none;
-                color: $text-color-3;
-                font-size: 1.3rem;
-                font-weight: 600;
-                padding: 0.5rem 0;
-                text-align: center;
-                border-bottom: solid 0.1rem $text-color-2;
-                transition: all .3s;
-              }
-              a:last-child {
-                  border-bottom: 0;
-                }
-                a:hover{
-                    background-color: $white-2;
-                    transition: all .3s;
-                }
-            }
-            .user-account-area::before {
-              content: "";
-              position: absolute;
-              width: 2rem;
-              height: 2rem;
-              background-color: $white;
-              top: -11px;
-              left: 82px;
-              // box-shadow: $box-shadow-card;
-              border: solid rgb(216, 216, 216) 0.1rem;
-              border-right: 0;
-              border-bottom: 0;
-              transform: rotate(45deg);
-            }
+          
           }
-          .user-profile-area:hover .user-account-area{
+          .user-profile-area:hover {
+            .profile-pic:after{
               visibility: visible;
               opacity: 1;
-              z-index: 999;
+              z-index: 9999;
               transition: all 0.3s; 
             }
+            .user-name{
+            
+              .user-account-area{
+                visibility: visible;
+                opacity: 1;
+                z-index: 999;
+                transition: all 0.3s; 
+              }
+            }
+            
+          }
         }
       }
     }
     .menu-bar {
       height: 3rem;
-      background-color: $white-2;
+      background-color: $white;
       color: $white;
+      border-top: .1rem solid $border-color;
       .navbar{
           padding: 0;
           align-items: center;
@@ -346,13 +372,12 @@
              display: block;
              font-size: 1.3rem;
              color: $text-color;
-             text-transform: uppercase;
+             text-transform:capitalize;
              padding-right: 2rem;
-             font-weight: 500;
-             i{
-                 font-size: 1.4rem;
-                 margin-left: .4rem;   
-             }
+             font-weight: 600;
+             line-height: 30px;
+           
+              
              transition: all .2s;
          } 
          a:hover{
@@ -361,26 +386,64 @@
          }
          .product-menu-area{
              position: relative;
+             margin-right: 1rem;
+             .all-categorise{
+               
+               padding: 0 1rem;
+               width: 20rem;
+               align-items: center;
+                 border: .1rem solid $border-color;
+                 border-top: 0;
+                 border-bottom: 0;
+                 color: $text-color;
+                 transition: all 0.2s;
+                  .list-icon-text{
+                    i{
+                      padding: 8px 0;
+                    }
+                    a{
+                      text-transform: uppercase;
+                      margin-left: .5rem;
+                      font-weight: 600;
+                    }
+                  
+                  }
+                  i{
+                    font-size: 1.4rem;
+                 
+                  }
+                }
             .mega-menu-area{
               position: absolute;
                 background-color: $white;
-                width: 50rem;
-                padding: 2rem 2rem;
+                padding: 1rem 1rem;
                 box-shadow: $box-shadow-card;
-                top: 28px;
+                top: 30px;
                 visibility: hidden;
                 opacity: 0;
+                width: 20rem;
+                border-bottom: solid .5rem $primary;
+                transform: translate3d(0, -1rem, 0);
                 transition: all 0.3s;
+              
       
                 .category-col{
                     a{
                         display: block;
                         padding-right: 0rem;
-                        padding: 1rem 0;
+                        line-height: 35px;
                         font-size: 1.2rem;
                         text-transform: uppercase;
                         color: $text-color-2;
+                        border-top: solid .1rem $border-color;
+                        
                         transition: all .2s;
+                        
+                        
+                    }
+                    a:first-child{
+                      border-top: 0;
+
                     }
                     a:hover{
                       color: $hover-c;
@@ -393,28 +456,30 @@
                     }
                 }
             } 
-            .mega-menu-area::before {
-              content: "";
-              position: absolute;
-              width: 2rem;
-              height: 2rem;
-              background-color: $white;
-              top: -11px;
-              left:68px;
-              // box-shadow: $box-shadow-card;
-              border: solid rgb(216, 216, 216) 0.1rem;
-              border-right: 0;
-              border-bottom: 0;
-              transform: rotate(45deg); 
-            } 
   
          }
-         .product-menu-area:hover .mega-menu-area{
-          visibility: visible;
-          opacity: 1;
-          z-index: 999;
-          transition: all 0.3s; 
-  
+         .product-menu-area:hover {
+           .all-categorise{
+             background-color: $primary;
+             a{
+               color: $white;
+               transition: all 0.2s;
+             }
+             i{
+               color: $white;
+               transition: all 0.2s;
+             }
+             transition: all 0.3s;
+           }
+          .mega-menu-area{
+            visibility: visible;
+            opacity: 1;
+            z-index: 999;
+            transform: translate3d(0, 0, 0);
+            transition: all 0.3s; 
+    
+           }
+
          }
       }
     }

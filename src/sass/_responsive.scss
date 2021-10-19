@@ -1,1 +1,18 @@
- 
+@media (min-width: 1200px) {
+    .main-section-home{
+        .main-product-area{
+            .col-6{
+             flex: 0 0 20%;
+             max-width: 20%;
+            }
+        }
+    }
+    .main-section-search-result{
+        .main-product-area{
+            .col-6{
+             flex: 0 0 25%;
+             max-width: 25%;
+            }
+        }
+    }
+}
