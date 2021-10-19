@@ -17,3 +17,21 @@
     transition: all .3s;
 
 }
+.link-button{
+    background-color: $primary;
+    color: $white;
+    font-weight: 700;
+    padding: .5rem 2rem;
+    font-size: 1.4rem;
+    border: 0;
+    border-radius: .5rem;
+    display: inline-block;
+    box-shadow: $box-shadow-icon;
+    transition: all .3s;
+}
+.link-button:hover{
+    color: $white;
+    background-color: $primary-2;
+    transition: all .3s;
+
+}

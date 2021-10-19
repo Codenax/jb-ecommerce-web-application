@@ -56,3 +56,66 @@ a:hover{
   outline: 0;
   box-shadow: 0 0 0 0.1rem rgb(10, 255, 214);
 }
+.heading-every-section{
+  background-color: $white;
+  padding: 2rem;
+  padding-bottom: 2.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: $box-shadow-card-2;
+  h2{
+    color:  $secondary-2;
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+
+  }
+  h2:after{
+    content:'';
+    //border-bottom: solid 1rem $primary;
+    position: absolute;
+    background-color: $primary;
+    height: .2rem;
+    bottom: -7px;
+    left: 0;
+    width: 50%;
+    z-index: 9999;
+  }
+  h2:before{
+    content:'';
+    //border-bottom: solid 1rem $primary;
+    position: absolute;
+    background-color: $primary;
+    height: .2rem;
+    bottom: -3px;
+    left: 0;
+    width: 75%;
+    z-index: 9999;
+  }
+  a{
+    font-size: 1.4rem ;
+    border-radius: 5rem;
+    padding: 0rem 2rem;
+    border: solid .1rem $primary;
+    font-weight: 600;
+    color: $primary;
+    line-height:20px;
+    transition: all .3s;
+
+  }
+  a:hover{
+    color: $hover-c;
+    border-color: $hover-c;
+    transition: all .3s;
+  }
+}
+.category-section{
+  .heading-every-section{
+    margin-bottom: 0;
+  }
+}

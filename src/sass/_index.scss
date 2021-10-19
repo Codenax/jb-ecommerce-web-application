@@ -1,1 +1,70 @@
-   
+.slider-section {
+  padding: 3rem 0;
+  padding-top: 12rem;
+  background-color: $white;
+  .carousel-inner {
+    .carousel-item {
+      .carousel-caption {
+        text-align: left;
+        h5 {
+          font-size: 3.5rem;
+          color: $text-color;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          text-shadow: $box-shadow-text;
+        }
+      }
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+}
+
+.category-section {
+    padding: 3rem 0;
+  .row {
+    .item-box {
+      background-color: $white;
+      width: 10%;
+      border: solid 0.05rem $border-color;
+      border-right: 0;
+      flex-direction: column;
+      transition: all 0.3s;
+      height: 100%;
+      .img-area {
+        flex-shrink: 1;
+        padding: 20%;
+        padding-top: 30%;
+        height: auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      span {
+        width: 95%;
+        text-align: center;
+        color: $text-color-3;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        height: 3.125rem;
+        transition: all 0.3s;
+      }
+    }
+    .item-box:hover {
+      border-color: rgba(0, 0, 0, 0.12);
+      box-shadow: 0 0 0.8125rem 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.3s;
+      span{
+          color: $hover-c;
+          transition: all 0.3s;
+      }
+    }
+    .item-box:last-child {
+      border-right: solid 0.05rem $border-color;
+    }
+  }
+}
