@@ -114,8 +114,27 @@ a:hover{
     transition: all .3s;
   }
 }
+.top-banner-section{
+  padding-top: 12rem;
+  .banner-img{
+    position: relative;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    h2{
+      position: absolute;
+      bottom: 5%;
+      left: 3rem;
+      font-size: 5rem;
+      color: $white;
+      text-shadow: $box-shadow-text;
+    }
+  }
+}
 .category-section{
   .heading-every-section{
     margin-bottom: 0;
+  
   }
 }

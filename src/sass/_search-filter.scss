@@ -9,6 +9,16 @@
     
     .category {
       background-color: $white;
+      .filter-text{
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        color: $text-color-2;
+        font-weight: 600;
+        display: block;
+        border-bottom: solid .1rem $body-color;
+
+      }
       .accordion {
         width: 100%;
         margin: 0;
@@ -111,5 +121,59 @@
     flex: 1;
     width: 0;
     min-width: 0;
+    .product-sortBy-menu{
+      background-color: $white;
+      padding: 1rem 2rem;
+      margin-bottom: 1rem;
+      align-items: center;
+      .left-side-option{
+        .sortby{
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $text-color-2;
+        }
+        .option-by{
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $white;
+          width: 8rem;
+          display: inline-block;
+          text-align: center;
+          line-height: 30px;
+          margin-left: 1rem;
+          background-color: $primary;
+          border-radius: .5rem;
+          transition: all .3s;
+        }
+        .option-by.actived{
+          background-color: $hover-c;
+          transition: all .3s;
+        }
+        .option-by:hover{
+          background-color: $hover-c;
+          transition: all .3s;
+        }
+      }
+      .right-side-option{
+        .input-group{
+          width: 18rem;
+          select{
+            height: 3.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            option{
+              font-size: 1.4rem;
+              font-weight: 600;
+            }
+          }
+         
+          .custom-select:focus {
+            border-color: $hover-c;
+            outline: 0;
+            box-shadow:$box-shadow-card-hover ;
+        }
+        }
+      }
+    }
   }
 }
