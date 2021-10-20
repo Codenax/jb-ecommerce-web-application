@@ -1,0 +1,50 @@
+.magnifier{
+  border: solid .3rem $primary !important;
+}
+.section-product-detalis {
+  padding-top: 15rem;
+  .slick-dots {
+    display: none !important;
+  }
+
+  .dis-image-area {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .small-img {
+    // width: 10rem !important;
+    // height: 10rem !important;
+    padding: 0.5rem;
+    height: auto;
+    cursor: pointer;
+    background-color: $white;
+
+    img {
+      width: 100%;
+      height: auto;
+      border: solid 0.3rem $white;
+    }
+  }
+  .slider-nav {
+    .slick-prev {
+        left: 0px;
+        z-index: 9999;
+    }
+    .slick-next{
+        right: 0px;
+        z-index: 9999;
+    }
+    .slick-current {
+      img {
+        border: solid 0.3rem $primary;
+      }
+    }
+  }
+}
