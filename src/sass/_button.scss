@@ -35,3 +35,32 @@
     transition: all .3s;
 
 }
+.add-cart,.buy-now{
+    background-color: $primary;
+    color: $white;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .5rem;
+    display: inline-block;
+    box-shadow: $box-shadow-icon;
+    transition: all .3s;
+}
+.add-cart{
+    margin-right: 2rem;
+    background-color: $white;
+    color: $primary;
+    border:solid .2rem $primary;
+}
+.add-cart:hover{
+    color: $hover-c;
+    border-color: $hover-c;
+    transition: all .3s;
+}
+.buy-now:hover{
+    background-color: $hover-c;
+    border-color: $hover-c;
+    transition: all .3s;
+}
