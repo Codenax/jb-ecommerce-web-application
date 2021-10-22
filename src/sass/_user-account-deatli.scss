@@ -1,0 +1,269 @@
+.account-detalis {
+  padding-top: 15rem;
+  .left-side-area {
+    background-color: $white;
+    padding: 2rem 2rem;
+
+    .profile-pic-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $white;
+      padding-bottom: 1.5rem;
+      border-bottom: solid 0.1rem $border-color;
+      img {
+        width: 15rem;
+        height: 15rem;
+        margin: auto;
+        border-radius: 1rem;
+        border: solid 0.3rem $primary;
+      }
+      .user-name {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $text-color;
+        margin: 0.5rem 0;
+      }
+      .change-pic {
+        color: $text-color-2;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0 0.5rem;
+        border: solid 0.1rem $border-color;
+      }
+    }
+    .side-menu-area {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+      .v-list {
+        align-items: center;
+        color: $text-color-2;
+        height: 3rem;
+        transition: all 0.2s;
+        i {
+          width: 3rem;
+          font-size: 1.5rem;
+          text-align: center;
+          color: $primary;
+          transition: all 0.2s;
+        }
+        h4 {
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          margin-left: 0.5rem;
+        }
+      }
+      a.active,
+      a:hover {
+        .v-list {
+          color: $hover-c;
+          transition: all 0.2s;
+          i {
+            color: $hover-c;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+  }
+  .right-side-area {
+    .profile-area {
+      background-color: $white;
+      padding: 1.5rem;
+      .all-heading {
+        padding-bottom: 1rem;
+      }
+    }
+    .all-heading {
+        text-align: left;
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: solid 0.5rem $primary;
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+      }
+      h3:after {
+        content: "";
+        //border-bottom: solid 1rem $primary;
+        position: absolute;
+        background-color: $primary;
+        height: 0.2rem;
+        bottom: -7px;
+        left: 0;
+        width: 50%;
+        z-index: 9999;
+      }
+      h3:before {
+        content: "";
+        //border-bottom: solid 1rem $primary;
+        position: absolute;
+        background-color: $primary;
+        height: 0.2rem;
+        bottom: -3px;
+        left: 0;
+        width: 75%;
+        z-index: 9999;
+      }
+      p {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $text-color-2;
+        margin-top: 1rem;
+      }
+    }
+    form {
+      padding-top: 1rem;
+      padding-right: 5rem;
+      .primary-btn {
+        margin-left: 20rem;
+        width: 15rem;
+        margin-top: 3rem;
+      }
+    }
+    .form-group {
+      margin-top: 1.5rem;
+      display: flex;
+      color: $text-color-3;
+      font-size: 1.5rem;
+      font-weight: 600;
+      align-items: center;
+      label {
+        flex: 0 0 20rem;
+        padding-right: 3rem;
+        display: block;
+        text-align: right;
+        margin-bottom: 0;
+      }
+      .user-name {
+        color: $text-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      input {
+        color: $text-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .birth-date {
+        color: $text-color-2;
+      }
+      input::placeholder {
+        color: $text-color-2;
+      }
+    }
+
+    .address-area {
+      background-color: $white;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      text-align: right;
+      .address {
+          align-items: center;
+        padding: 2rem 1rem;
+        border-bottom: solid 0.1rem $border-color;
+        .form-group {
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+          align-items: flex-start;
+          label {
+            font-size: 1.4rem;
+            flex: 0 0 15rem;
+          }
+          span {
+            color: $text-color;
+            font-size: 1.4rem;
+          }
+        }
+        .display-address {
+          width: 70%;
+        }
+        .oparation-area {
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          a {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border: 0.1rem solid $border-color;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+
+          div {
+            padding: 0 0.4rem;
+          }
+          .edit {
+            width: 40%;
+            a {
+              border: 0.1rem solid $primary;
+              color: $primary;
+            }
+          }
+          .delete {
+            width: 40%;
+            a {
+              border: 0.1rem solid $hover-c;
+              color: $hover-c;
+            }
+          }
+          .set-up {
+            width: 80%;
+            a {
+              border: 0.1rem solid $text-color-2;
+              color: $text-color-2;
+              margin-top: .5rem;
+            }
+          }
+        }
+        .defult-tag{
+            width: 10%;
+            span{
+                background-color: #1adb7e;
+                color: $white;
+                padding: .2rem 1rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                border-radius: .5rem;
+            }
+            .actived{
+                display: inline-block;
+                visibility:visible;
+            }
+            .not-actived{
+              
+                    display: none;
+                    visibility:hidden;
+                
+            }
+        }
+      }
+
+      .primary-btn {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-top: 2rem;
+      }
+    }
+
+    .accounts{
+        margin-bottom: 3rem;
+       .content-area{
+           text-align: center;
+           padding: 5rem 3rem;
+           p{
+               font-size: 4rem;
+           }
+       } 
+    }
+  }
+}

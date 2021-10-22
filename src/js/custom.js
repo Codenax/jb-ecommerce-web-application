@@ -23,6 +23,13 @@ $(document).ready(function () {
   $ (".slick-track").children().imagezoomsl({
     zoomrange: [2,3]
   })
+
+  // Data Picker Initialization
+
+        // $('#datepicker').datepicker({
+        //     uiLibrary: 'bootstrap4'
+        // });
+
  
 });
 

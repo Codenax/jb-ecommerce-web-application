@@ -235,6 +235,9 @@
     .navigration-option {
       justify-content: space-between;
       align-items: center;
+      justify-content: start;
+      flex-direction: row;
+      flex-wrap: wrap;
       .v-list {
         width: auto;
         display: inline-block;
