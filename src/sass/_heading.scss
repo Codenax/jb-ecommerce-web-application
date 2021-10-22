@@ -87,10 +87,10 @@
               background-color: $white-2;
               padding-right: 3.8rem;
             }
-            input:focus {
-              border-color: $hover-c;
-              box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
-            }
+            // input:focus {
+            //   border-color: $hover-c;
+            //   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+            // }
             input::placeholder {
               font-size: 1.6rem;
               font-family: "Ubuntu", sans-serif;
