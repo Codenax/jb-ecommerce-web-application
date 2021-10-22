@@ -77,9 +77,10 @@
       }
     }
     .all-heading {
-        text-align: left;
+      text-align: left;
       padding-bottom: 2rem;
       margin-bottom: 1rem;
+      background-color: $white;
       border-bottom: solid 0.5rem $primary;
       h3 {
         font-size: 1.8rem;
@@ -164,7 +165,7 @@
       margin-top: 3rem;
       text-align: right;
       .address {
-          align-items: center;
+        align-items: center;
         padding: 2rem 1rem;
         border-bottom: solid 0.1rem $border-color;
         .form-group {
@@ -221,30 +222,28 @@
             a {
               border: 0.1rem solid $text-color-2;
               color: $text-color-2;
-              margin-top: .5rem;
+              margin-top: 0.5rem;
             }
           }
         }
-        .defult-tag{
-            width: 10%;
-            span{
-                background-color: #1adb7e;
-                color: $white;
-                padding: .2rem 1rem;
-                font-size: 1.1rem;
-                font-weight: 600;
-                border-radius: .5rem;
-            }
-            .actived{
-                display: inline-block;
-                visibility:visible;
-            }
-            .not-actived{
-              
-                    display: none;
-                    visibility:hidden;
-                
-            }
+        .defult-tag {
+          width: 10%;
+          span {
+            background-color: #1adb7e;
+            color: $white;
+            padding: 0.2rem 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+          }
+          .actived {
+            display: inline-block;
+            visibility: visible;
+          }
+          .not-actived {
+            display: none;
+            visibility: hidden;
+          }
         }
       }
 
@@ -255,15 +254,189 @@
       }
     }
 
-    .accounts{
-        margin-bottom: 3rem;
-       .content-area{
-           text-align: center;
-           padding: 5rem 3rem;
-           p{
-               font-size: 4rem;
-           }
-       } 
+    .accounts {
+      margin-bottom: 3rem;
+      .content-area {
+        text-align: center;
+        padding: 5rem 3rem;
+        p {
+          font-size: 4rem;
+        }
+      }
     }
   }
+
+  // product purchase area start//
+  .purchase-area {
+    .single-heading {
+      padding: 1.5rem;
+      background-color: $white;
+    }
+    .search-ber {
+      width: 100%;
+      .form-inline {
+        flex-flow: row;
+        //flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1rem;
+        padding-right: 0rem;
+        margin: 1rem 0;
+        display: flex;
+      }
+      input {
+        width: 80%;
+        font-size: 1.8rem;
+        color: $text-color;
+        border-radius: 0;
+      }
+      input::placeholder {
+        color: $text-color-2;
+      }
+      .primary-btn {
+        width: 20%;
+        display: inline-block;
+        margin-left: 0;
+        border-radius: 0;
+        border: solid 0.1rem $primary;
+        margin-top: 0;
+      }
+    }
+    .single-product {
+      background-color: $white;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+
+      .header-ber {
+        border-bottom: solid 0.1rem $border-color;
+        padding-bottom: 0.5rem;
+        span {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+        .delivered {
+          color: $primary;
+          border-right: solid 0.1rem $border-color;
+          padding-right: 1rem;
+        }
+        .p-status {
+          color: $hover-c;
+          margin-left: 1rem;
+        }
+        .order-id {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $text-color-2;
+          float: right;
+        }
+      }
+      .product-area {
+        margin: 1rem 0;
+        padding: 1rem 0;
+        border-bottom: solid 0.1rem $border-color;
+        align-items: center;
+
+        .p-image {
+          flex: 0 0 10rem;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .p-detalis {
+          width: 70%;
+
+          h4 {
+            color: $text-color;
+            font-weight: 600;
+            font-size: 1.6rem;
+            padding-top: 0.5rem;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          span {
+            color: $text-color-2;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding-right: 0.5rem;
+            text-align: left;
+            flex: 0 0 7rem;
+          }
+          .variation,
+          .quantity {
+            text-align: left !important;
+            flex: 0 0 90%;
+          }
+        }
+        .product-price {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $text-color-2;
+          text-align: center;
+          padding-left: 5%;
+          span {
+            color: $hover-c;
+            margin-left: 0.5rem;
+          }
+        }
+      }
+      .footer-area {
+       background-color: $white-2;
+       padding: 1rem 1rem;
+       border-radius: 1rem;
+     
+        .total-price {
+          justify-content: end;
+          align-items: center;
+          margin-bottom: 1.5rem;
+          margin-top: 1rem;
+          h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $text-color-2;
+          }
+          .product-total-price {
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: 0 0.5rem;
+            color: $hover-c;
+          }
+        }
+        .oparation-area {
+          align-items: flex-end;
+          justify-content: space-between;
+          padding-bottom: 0rem;
+         
+          .given-rating {
+            span {
+              font-size: 1.2rem;
+              font-weight: 600;
+              color: $text-color-2;
+            }
+          }
+          .button-area {
+            .link-button {
+              padding: 1rem 2rem;
+              margin-left: 1rem;
+            }
+            .detalis {
+              color: $primary;
+              background-color: $white;
+              border-color: $primary !important;
+              border: solid .1rem;
+            }
+          }
+        }
+      }
+    
+    }
+    .single-product:last-child{
+      margin-bottom: 2rem;
+    }
+  }
+
+  // product purchase area end//
 }
