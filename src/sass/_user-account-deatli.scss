@@ -3,6 +3,7 @@
   .left-side-area {
     background-color: $white;
     padding: 2rem 2rem;
+    box-shadow: $box-shadow-card-2;
 
     .profile-pic-area {
       display: flex;
@@ -84,6 +85,7 @@
     .profile-area {
       background-color: $white;
       padding: 1.5rem;
+      box-shadow: $box-shadow-card-2;
       .all-heading {
         padding-bottom: 1rem;
       }
@@ -176,6 +178,7 @@
       padding: 1.5rem;
       margin-top: 3rem;
       text-align: right;
+      box-shadow: $box-shadow-card-2;
       .address {
         align-items: center;
         padding: 2rem 1rem;
@@ -195,6 +198,10 @@
         }
         .display-address {
           width: 70%;
+          padding-right: 2%;
+          span {
+            text-align: left;
+          }
         }
         .oparation-area {
           flex-wrap: wrap;
@@ -205,11 +212,12 @@
             width: 100%;
             display: inline-block;
             text-align: center;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
             border: 0.1rem solid $border-color;
             font-size: 1.2rem;
             font-weight: 600;
+            border-radius: .5rem;
           }
 
           div {
@@ -283,9 +291,11 @@
     .single-heading {
       padding: 1.5rem;
       background-color: $white;
+      box-shadow: $box-shadow-card-2;
     }
     .search-ber {
       width: 100%;
+      box-shadow: $box-shadow-card-2;
       .form-inline {
         flex-flow: row;
         //flex-direction: row;
@@ -318,6 +328,7 @@
       padding: 1.5rem;
       margin-top: 1.5rem;
       margin-bottom: 1rem;
+      box-shadow: $box-shadow-card-2;
 
       .header-ber {
         border-bottom: solid 0.1rem $border-color;
