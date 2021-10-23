@@ -368,7 +368,7 @@
           .variation,
           .quantity {
             text-align: left !important;
-            flex: 0 0 90%;
+            flex: 1 0 0;
           }
         }
         .product-price {
@@ -384,10 +384,10 @@
         }
       }
       .footer-area {
-       background-color: $white-2;
-       padding: 1rem 1rem;
-       border-radius: 1rem;
-     
+        background-color: $white-2;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+
         .total-price {
           justify-content: end;
           align-items: center;
@@ -409,7 +409,7 @@
           align-items: flex-end;
           justify-content: space-between;
           padding-bottom: 0rem;
-         
+
           .given-rating {
             span {
               font-size: 1.2rem;
@@ -426,17 +426,237 @@
               color: $primary;
               background-color: $white;
               border-color: $primary !important;
-              border: solid .1rem;
+              border: solid 0.1rem;
             }
           }
         }
       }
-    
     }
-    .single-product:last-child{
+    .single-product:last-child {
       margin-bottom: 2rem;
     }
   }
-
   // product purchase area end//
+
+  .single-p-detalis {
+    .single-heading {
+      .all-heading {
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+        a {
+          font-size: 1.8rem;
+          color: $text-color-2;
+          transition: all 0.2s;
+          font-weight: 600;
+          i {
+            color: $primary;
+            font-size: 1.8rem;
+            margin-right: 0.5rem;
+            transition: all 0.2s;
+          }
+        }
+        a:hover {
+          color: $hover-c;
+          transition: all 0.2s;
+          i {
+            color: $hover-c;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+    .single-product {
+      .product-area {
+        .p-detalis {
+          width: 55%;
+          padding-right: 1rem;
+          h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: $text-color-3;
+          }
+        }
+        .product-price-detali {
+          flex: auto;
+          padding-left: 1rem;
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $text-color-2;
+          text-align: left;
+          flex-direction: column;
+          border-left: solid 0.1rem $border-color;
+          span {
+            color: $hover-c;
+            margin-left: 0.1rem;
+            font-weight: 600;
+          }
+          h4 {
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            font-weight: 600;
+            color: $text-color-3;
+          }
+          .sub-total {
+            padding: 0 0.5rem;
+          }
+          .shipping-fee {
+            padding: 0.5rem;
+            border-bottom: 0.1rem solid $border-color;
+          }
+          h5 {
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+          .total {
+            padding-top: 0.5rem;
+            h5 {
+              font-size: 1.4rem;
+              font-weight: 600;
+              color: $text-color-3;
+            }
+          }
+        }
+      }
+
+      .delivary-summary {
+        background-color: $white-2;
+        padding: 2rem;
+        border-radius: 1rem;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        .p-tracking-area {
+          .comon-div {
+            position: relative;
+            height: 12rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 0;
+            align-items: center;
+            justify-content: end;
+            .icon-area {
+              border: solid 0.4rem $border-color;
+              background-color: $white;
+              border-radius: 5rem;
+              padding: 2rem;
+              width: 8rem;
+              height: 8rem;
+              text-align: center;
+              text-align: center;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: auto;
+              z-index: 5;
+              position: absolute;
+              top: 0;
+              i {
+                font-size: 3rem;
+                color: $border-color;
+              }
+            }
+            h5 {
+              font-size: 1.3rem;
+              font-weight: 600;
+              color: $text-color-2;
+              margin-top: 1rem;
+            }
+            span {
+              font-size: 1rem;
+              font-weight: 600;
+              color: $text-color-2;
+            }
+          }
+          .comon-div::before {
+            content: "";
+            position: absolute;
+            background-color: $border-color;
+            height: 0.4rem;
+            width: 100%;
+            top: 4rem;
+          }
+          .order-place::before {
+            width: 50%;
+            top: 4rem;
+            left: 50%;
+          }
+          .shiping-procesing::before {
+            width: 100%;
+            top: 4rem;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .order-completed::before {
+            width: 50%;
+            top: 4rem;
+            right: 50%;
+          }
+          .actived.comon-div::before{
+            background-color: $primary;
+          }
+          .actived.comon-div{
+            .icon-area{
+              border-color: $primary;
+              i{
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+      .tracking-gatway-area{
+        margin-top: 3rem;
+        border-top: solid .1rem $border-color;
+        padding-top: 2rem;
+        .shiping-address {
+          flex-direction: column;
+          flex: 0 0 40%;
+         h3{
+          font-size: 1.8rem;
+          color: $text-color-3;
+          font-weight: 600;
+          position: relative;
+          padding-bottom: .5rem;
+          margin-bottom: 1.5rem;
+         
+         }
+         h3::after{
+          content: '';
+          background-color: $primary;
+          height: .2rem;
+          width: 40%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+         }
+          h4{
+            font-size: 1.6rem;
+            color: $text-color-3;
+            font-weight: 600;
+            margin-bottom: .5rem;
+          }
+          span{
+            font-size: 1.2rem;
+            color: $text-color-2;
+            font-weight: 600;
+          }
+        }
+        .tracking-informetion{
+          flex: 0 0 60%;
+          text-align: center;
+          flex-direction: column;
+          padding: 3rem ;
+          height: 30rem;
+          justify-content: center;
+          border-left: solid .1rem $border-color;
+          p{
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  //single product purchase area start//
+  //single product purchase area end//
 }
