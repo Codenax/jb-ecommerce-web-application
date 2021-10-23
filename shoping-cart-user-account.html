@@ -243,137 +243,232 @@
     <div class="account-detalis">
       <div class="container">
         <div class="row">
-          <!-- nevigration menu area start -->
-          <div class="col-3 ">
-            <div class="left-side-area">
-              <div class="profile-pic-area">
-                <img src="assets/images/my_picture_squre.jpg" alt="">
-                <span class="user-name">Alam Jahangir</span>
-                <a href="#" class="change-pic">Change Image</a>
-              </div>
-              <div class="side-menu-area">
-                <a href="#" class="active">
-                  <div class="v-list d-flex"><i class="fas fa-user"></i>
-                    <h4>My Account Deatlis</h4>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="v-list d-flex"><i class="fas fa-store"></i>
-                    <h4>My Purchase</h4>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="v-list d-flex"><i class="fas fa-shopping-cart"></i>
-                    <h4>My Shoping Cart</h4>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="v-list d-flex"><i class="fas fa-bell"></i>
-                    <h4>Notifications</h4>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-          </div>
-          <!-- nevigration menu area end -->
-
-          <!--single product purchase area start -->
+          <!--main shoping cart area end -->
           <div class="col-9">
-            <div class="right-side-area">
-              <div class="purchase-area single-p-detalis">
+            <div class="right-side-area shoping-cart-area">
+              <!--shoping cart area start -->
+
+              <div class="purchase-area">
                 <div class="single-heading">
                   <div class="all-heading">
-                    <a href="#"><i class="fas fa-backspace"></i>Back</a>
+                    <h3>My Shoping Cart</h3>
+                  </div>
+                </div>
+                <div class="search-ber">
+                  <form class="form-inline my-2 ">
+                    <input class="form-control" type="search" placeholder="Search Product Name"
+                      aria-label="Search">
+                    <button class="primary-btn" type="submit">Search</button>
+                  </form>
+                </div>
+
+
+                <div class="info-bar d-flex justify-content-between">
+                  <div class="i-left-side">
+                    <h4>Product Detalis</h4>
+                  </div>
+                  <div class="i-right-side d-flex">
+                    <h4>Unit Price</h4>
+                    <h4>Quantity</h4>
+                    <h4>Total Price</h4>
+                    <h4>Action</h4>
                   </div>
                 </div>
                 <!--  single-product area start-->
                 <div class="single-product">
-                  <div class="header-ber d-flex justify-content-between">
-                    <div class="left-side">
-                      <span class="delivered">Parcel has been delivered</span>
-                      <span class="p-status">COMPLETED</span>
-                    </div>
-                    <div class="order-id">
-                      Order ID : <spen class="id-nbo">BG202238479</spen>
-                    </div>
-                  </div>
-                  <div class="product-area d-flex">
-                    <div class="p-image">
-                      <img src="assets/images/product-img/redmi.jpg" alt="">
-                    </div>
-                    <div class="p-detalis">
-                      <h4>Baseus H06 In-ear Stereo Bass Earphones Headphones sdfsaf sadfsadf sdafsda sadfsad fsdfsad
-                        fsdf asdf asfds fa fsadf aasf fgas jack wired Earbuds (3.5mm)</h4>
-                      <div class="p-variation d-flex justify-content-between">
-                        <span>Variation :</span>
-                        <span class="variation">128GB Black</span>
-                      </div>
-                      <div class="p-quantity d-flex justify-content-between">
-                        <span>Quantity :</span>
-                        <span class="quantity">2</span>
-                      </div>
-                    </div>
-                    <div class="product-price-detali d-flex">
-                      <h4>Total Summary</h4>
-                      <div class="sub-total d-flex justify-content-between">
-                        <h5>Subtotal<span class="item-count">(2)</span>Item</h5>
-                        <h5>Bdt <span class="item-price">40000</span></h5>
-                      </div>
-                      <div class="shipping-fee  d-flex justify-content-between">
-                        <h5>Shipping Fee </h5>
-                        <h5>Bdt <span class="fee">50</span></h5>
-                      </div>
-                      <div class="total  d-flex justify-content-between">
-                        <h5>Total(0% GST) </h5>
-                        <h5>Bdt <span class="fee">40050</span></h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="delivary-summary">
-                    <div class="p-tracking-area d-flex justify-content-around">
-                      <div class="actived comon-div order-place">
-                        <div class="icon-area">
-                          <i class="fas fa-luggage-cart"></i>
+                  <div class="product-area d-flex justify-content-between">
+                    <div class="product-detalis d-flex">
+                      <div class="select-option d-flex">                   
+                        <div class="option-area ">
+                            <div class="form-group">
+                              <input type="checkbox" id="jb-1">
+                              <label for="jb-1"></label>
+                            </div>
                         </div>
-                        <h5>Order Placed</h5>
-                        <span class="date-time">26-5-2021 5:10</span>
                       </div>
-                      <div class="comon-div shiping-procesing">
-                        <div class="icon-area">
-                          <i class="fas fa-caravan"></i>
-                        </div>
-                        <h5>Shiping Procesing</h5>
-                        <span class="date-time">26-5-2021 5:10</span>
+                      <div class="p-image">
+                        <img src="assets/images/product-img/redmi.jpg" alt="">
                       </div>
-                      <div class="comon-div order-completed">
-                        <div class="icon-area">
-                          <i class="fas fa-download"></i>
+                      <div class="p-detalis">
+                        <h4>Baseus H06 In-ear Stereo Bass Earphones Headphones sdfsaf sadfsadf sdafsda sadfsad fsdfsad
+                          fsdf asdf asfds fa fsadf aasf fgas jack wired Earbuds (3.5mm)</h4>
+                        <div class="p-variation d-flex">
+                          <span>Variation :</span>
+                          <span class="variation">128GB Black</span>
                         </div>
-                        <h5>Order Completed</h5>
-                        <span class="date-time">26-5-2021 5:10</span>
+                        <div class="p-quantity d-flex">
+                          <span>Quantity :</span>
+                          <span class="quantity">2</span>
+                        </div>
                       </div>
                     </div>
-
-                  </div>
-                  <div class="tracking-gatway-area d-flex justify-content-between">
-                    <div class="shiping-address d-flex">
-                      <h3>Delivery Address</h3>
-                      <h4 class="user-name">Alam Jahangir</h4>
-                      <span class="user-phone-number">+6034520559</span>
-                      <span class="user-address">Block- B, Floor- 6, Room- 603, Tiara Kelana Condominium, 1, Jalan SS 7/17, Ss 7,, Petaling Jaya, 47301, Selangor</span>
-                    </div>
-                    <div class="tracking-informetion d-flex">
-                      <p>Here will be shown logistics gateway information.</p>
-                      <p>"Sorry!!Need logistics gateway API to complete this section"</p>
+                    <div class="p-detalis-right-side d-flex justify-content-between">
+                      <div class="product-price">
+                        <h4>BDT<span class="unit-price">2000</span></h4>
+                      </div>
+                      <div class="p-quantity">
+                        <div class="input-group">
+                          <input type="number" max="50000" min="1" value="1" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="total-parice">
+                        <h4>BDT<span class="total-price">2000</span></h4>
+                      </div>
+                      <div class="action">
+                        <a href="#" >Delete</a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <!--  single-product area end-->
+
+ <!--  single-product area start-->
+ <div class="single-product">
+  <div class="product-area d-flex justify-content-between">
+    <div class="product-detalis d-flex">
+      <div class="select-option d-flex">                   
+        <div class="option-area ">
+            <div class="form-group">
+              <input type="checkbox" id="jb-2">
+              <label for="jb-2"></label>
+            </div>
+        </div>
+      </div>
+      <div class="p-image">
+        <img src="assets/images/product-img/redmi.jpg" alt="">
+      </div>
+      <div class="p-detalis">
+        <h4>Baseus H06 In-ear Stereo Bass Earphones Headphones sdfsaf sadfsadf sdafsda sadfsad fsdfsad
+          fsdf asdf asfds fa fsadf aasf fgas jack wired Earbuds (3.5mm)</h4>
+        <div class="p-variation d-flex">
+          <span>Variation :</span>
+          <span class="variation">128GB Black</span>
+        </div>
+        <div class="p-quantity d-flex">
+          <span>Quantity :</span>
+          <span class="quantity">2</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-detalis-right-side d-flex justify-content-between">
+      <div class="product-price">
+        <h4>BDT<span class="unit-price">2000</span></h4>
+      </div>
+      <div class="p-quantity">
+        <div class="input-group">
+          <input type="number" max="50000" min="1" value="1" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="total-parice">
+        <h4>BDT<span class="total-price">2000</span></h4>
+      </div>
+      <div class="action">
+        <a href="#" >Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  single-product area end-->
+ <!--  single-product area start-->
+ <div class="single-product">
+  <div class="product-area d-flex justify-content-between">
+    <div class="product-detalis d-flex">
+      <div class="select-option d-flex">                   
+        <div class="option-area ">
+            <div class="form-group">
+              <input type="checkbox" id="jb-3">
+              <label for="jb-3"></label>
+            </div>
+        </div>
+      </div>
+      <div class="p-image">
+        <img src="assets/images/product-img/redmi.jpg" alt="">
+      </div>
+      <div class="p-detalis">
+        <h4>Baseus H06 In-ear Stereo Bass Earphones Headphones sdfsaf sadfsadf sdafsda sadfsad fsdfsad
+          fsdf asdf asfds fa fsadf aasf fgas jack wired Earbuds (3.5mm)</h4>
+        <div class="p-variation d-flex">
+          <span>Variation :</span>
+          <span class="variation">128GB Black</span>
+        </div>
+        <div class="p-quantity d-flex">
+          <span>Quantity :</span>
+          <span class="quantity">2</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-detalis-right-side d-flex justify-content-between">
+      <div class="product-price">
+        <h4>BDT<span class="unit-price">2000</span></h4>
+      </div>
+      <div class="p-quantity">
+        <div class="input-group">
+          <input type="number" max="50000" min="1" value="1" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="total-parice">
+        <h4>BDT<span class="total-price">2000</span></h4>
+      </div>
+      <div class="action">
+        <a href="#" >Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  single-product area end-->
+ <!--  single-product area start-->
+ <div class="single-product">
+  <div class="product-area d-flex justify-content-between">
+    <div class="product-detalis d-flex">
+      <div class="select-option d-flex">                   
+        <div class="option-area ">
+            <div class="form-group">
+              <input type="checkbox" id="jb-4">
+              <label for="jb-4"></label>
+            </div>
+        </div>
+      </div>
+      <div class="p-image">
+        <img src="assets/images/product-img/redmi.jpg" alt="">
+      </div>
+      <div class="p-detalis">
+        <h4>Baseus H06 In-ear Stereo Bass Earphones Headphones sdfsaf sadfsadf sdafsda sadfsad fsdfsad
+          fsdf asdf asfds fa fsadf aasf fgas jack wired Earbuds (3.5mm)</h4>
+        <div class="p-variation d-flex">
+          <span>Variation :</span>
+          <span class="variation">128GB Black</span>
+        </div>
+        <div class="p-quantity d-flex">
+          <span>Quantity :</span>
+          <span class="quantity">2</span>
+        </div>
+      </div>
+    </div>
+    <div class="p-detalis-right-side d-flex justify-content-between">
+      <div class="product-price">
+        <h4>BDT<span class="unit-price">2000</span></h4>
+      </div>
+      <div class="p-quantity">
+        <div class="input-group">
+          <input type="number" max="50000" min="1" value="1" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="total-parice">
+        <h4>BDT<span class="total-price">2000</span></h4>
+      </div>
+      <div class="action">
+        <a href="#" >Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  single-product area end-->
+
               </div>
+              <!-- shoping cart area end -->
             </div>
           </div>
-          <!--single product purchase area end -->
+          <!--main shoping cart area end -->
         </div>
       </div>
     </div>
@@ -384,9 +479,6 @@
   <!-- user account purchase detalisend-->
 
 
-
-
-  <!-- contact end -->
   <footer class="footer-section">
     <div class="content-area">
       <div class="container">
