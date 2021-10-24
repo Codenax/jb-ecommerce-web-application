@@ -1,9 +1,12 @@
 .account-detalis {
-  padding-top: 15rem;
+  padding-top: 3rem;
   .left-side-area {
     background-color: $white;
     padding: 2rem 2rem;
     box-shadow: $box-shadow-card-2;
+    position: sticky;
+    top: 11.7rem;
+    margin-bottom: 2rem;
 
     .profile-pic-area {
       display: flex;
@@ -217,7 +220,7 @@
             border: 0.1rem solid $border-color;
             font-size: 1.2rem;
             font-weight: 600;
-            border-radius: .5rem;
+            border-radius: 0.5rem;
           }
 
           div {
@@ -307,9 +310,11 @@
       }
       input {
         width: 80%;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: $text-color;
         border-radius: 0;
+        height: 3.4rem;
+        font-weight: 600;
       }
       input::placeholder {
         color: $text-color-2;
@@ -460,6 +465,7 @@
     }
   }
   // product purchase area end//
+
   //single product purchase area start//
   .single-p-detalis {
     .single-heading {
@@ -817,10 +823,10 @@
               }
             }
           }
-          .total-parice{
-            span{
+          .total-parice {
+            span {
               color: $hover-c;
-              margin-left:.5rem;
+              margin-left: 0.5rem;
             }
           }
           .action {
@@ -831,12 +837,12 @@
               color: $text-color-2;
               font-weight: 700;
               border-radius: 0.5rem;
-              transition: all .2s;
+              transition: all 0.2s;
             }
             a:hover {
               background-color: $text-color-2;
               color: $white;
-              transition: all .2s;
+              transition: all 0.2s;
             }
           }
         }
@@ -844,4 +850,166 @@
     }
   }
   //main shoping cart area end//
+
+  //check out oparation area start//
+  .check-out-area {
+    background-color: $white;
+    padding: 0rem;
+    border-bottom: solid 0.5rem $primary;
+    text-align: center;
+    padding-bottom: 2rem;
+    box-shadow: $box-shadow-card-2;
+    position: sticky;
+    top: 11.7rem;
+    margin-bottom: 2rem;
+
+    .content-area {
+      padding: 1.5rem;
+      background-color: $white-2;
+      margin: 1.5rem;
+
+      border-radius: 0.5rem;
+      padding-bottom: 4rem;
+      margin-top: 4rem;
+      .sub-total-area {
+        margin-top: 3rem;
+      }
+      .sub-total-area,
+      .shipping-fee-area {
+        padding: 0.5rem 0;
+      }
+    }
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: 3.5rem;
+      display: block;
+      border-bottom: solid 0.1rem $border-color;
+      background-color: $primary;
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-color-3;
+      span {
+        margin: 0 0.2rem !important;
+      }
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-color-3;
+      span {
+        color: $hover-c;
+        margin-left: 0.5rem;
+      }
+    }
+    .total-area {
+      border-top: solid 0.2rem $border-color;
+      margin-top: 2rem;
+      padding: 1rem 0;
+      h2 {
+        font-size: 1.6rem;
+        color: $text-color;
+      }
+      h3 {
+        font-size: 1.6rem;
+        color: $text-color;
+      }
+    }
+    .checkout-button {
+      position: relative;
+
+      display: block;
+      line-height: 2.6rem;
+      background-color: $secondary-3;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.5rem 0;
+      border-radius: 0.3rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      text-align: center;
+      color: $body-color;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+      box-shadow: $box-shadow-card-2;
+      border: solid 0.1rem $border-color;
+      transition: all 0.3s;
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5rem;
+        font-size: 2rem;
+
+        opacity: 0;
+        transition: all 0.3s;
+      }
+    }
+    .checkout-button:hover {
+      background-color: $hover-c;
+      color: $white;
+      i {
+        right: 3rem;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+      transition: all 0.3s;
+    }
+  }
+  //check out oparation area end//
+
+  //final checkout area start//
+  .p-checkout {
+    .single-product {
+      .product-area{
+        .product-detalis {
+          flex: 0 0 40%;
+        }
+      }
+      .p-detalis-right-side {
+        .product-price,
+        .p-quantity,
+        .total-parice {
+          position: relative;
+          border: solid 0.2rem $primary;
+          flex: 0 0 27%;
+          padding: .7rem 0;
+          padding-bottom: 0.5rem;
+          font-size: 1.4rem;
+          font-weight: 600;
+          border-radius: 0.5rem;
+          text-align: center;
+          h4{
+            font-size: 1.5rem !important;
+          }
+          .p-info {
+            position: absolute;
+
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: $white !important;
+            display: block;
+            top: -15px;
+            line-height: 15px;
+            left: 50%;
+            width: 72%;
+            transform: translateX(-50%);
+            padding: .2rem 0rem;
+            border-radius: .3rem;
+            margin-left: 0 !important;
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  //final checkout area end//
 }
