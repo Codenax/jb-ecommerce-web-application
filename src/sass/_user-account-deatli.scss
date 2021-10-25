@@ -93,48 +93,7 @@
         padding-bottom: 1rem;
       }
     }
-    .all-heading {
-      text-align: left;
-      padding-bottom: 2rem;
-      margin-bottom: 1rem;
-      background-color: $white;
-      border-bottom: solid 0.5rem $primary;
-      h3 {
-        font-size: 1.8rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        display: inline-block;
-        position: relative;
-      }
-      h3:after {
-        content: "";
-        //border-bottom: solid 1rem $primary;
-        position: absolute;
-        background-color: $primary;
-        height: 0.2rem;
-        bottom: -7px;
-        left: 0;
-        width: 50%;
-        z-index: 9999;
-      }
-      h3:before {
-        content: "";
-        //border-bottom: solid 1rem $primary;
-        position: absolute;
-        background-color: $primary;
-        height: 0.2rem;
-        bottom: -3px;
-        left: 0;
-        width: 75%;
-        z-index: 9999;
-      }
-      p {
-        font-weight: 600;
-        font-size: 1.2rem;
-        color: $text-color-2;
-        margin-top: 1rem;
-      }
-    }
+
     form {
       padding-top: 1rem;
       padding-right: 5rem;
@@ -288,14 +247,126 @@
       }
     }
   }
+  .all-heading-left {
+    padding-bottom: 2rem;
+    margin-bottom: 0rem;
+    border: 0;
+    text-align: left;
+    border-bottom: solid .4rem $primary;
+   
+    h3{
+      font-weight: 600;
+      color: $text-color-3;
+      font-size: 2rem;
+      margin: 0;
+      position: relative;
+      display: inline-block;
+    }
+    h3:after {
+      content: "";
+      border-bottom: solid .1rem $primary;
+      position: absolute;
+      background-color: $primary;
+      height: 0.2rem;
+      bottom: -7px;
+      left: 0;
+      width: 50%;
+      z-index: 9999;
+    }
+    h3:before {
+      content: "";
+      border-bottom: solid .1rem $primary;
+      position: absolute;
+      background-color: $primary;
+      height: 0.2rem;
+      bottom: -3px;
+      left: 0;
+      width: 75%;
+      z-index: 9999;
+    }
+  
+   
+  }
+  .all-heading-left.with-p{
+    padding-bottom: .5rem;
+    p {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: $text-color-2;
+      margin-top: 1rem;
+    }
+  }
+
+  .single-heading-back {
+    padding:1rem 1.5rem;
+    background-color: $white;
+    box-shadow: $box-shadow-card-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid .4rem $primary;
+    .all-heading {
+      padding-bottom: 0rem;
+      margin-bottom: 0rem;
+      border: 0;
+      a {
+        font-size: 1.8rem;
+        color: $text-color-2;
+        transition: all 0.2s;
+        font-weight: 600;
+        i {
+          color: $primary;
+          font-size: 1.8rem;
+          margin-right: 0.5rem;
+          transition: all 0.2s;
+        }
+      }
+      a:hover {
+        color: $hover-c;
+        transition: all 0.2s;
+        i {
+          color: $hover-c;
+          transition: all 0.2s;
+        }
+      }
+     
+    }
+    h3{
+      font-weight: 600;
+      color: $text-color-3;
+      font-size: 2rem;
+      margin: 0;
+      position: relative;
+    }
+    h3:after {
+      content: "";
+      border-bottom: solid .1rem $secondary-2;
+      position: absolute;
+      background-color: $secondary-2;
+      height: 0.15rem;
+      bottom: -8px;
+      right: 0;
+      width: 50%;
+      z-index: 9999;
+    }
+    h3:before {
+      content: "";
+      border-bottom: solid .1rem $secondary-2;
+      position: absolute;
+      background-color: $secondary-2;
+      height: 0.15rem;
+      bottom: -4px;
+      right: 0;
+      width: 75%;
+      z-index: 9999;
+    }
+  }
+
+
 
   // product purchase area start//
   .purchase-area {
-    .single-heading {
-      padding: 1.5rem;
-      background-color: $white;
-      box-shadow: $box-shadow-card-2;
-    }
+   
     .search-ber {
       width: 100%;
       box-shadow: $box-shadow-card-2;
@@ -968,7 +1039,7 @@
   //final checkout area start//
   .p-checkout {
     .single-product {
-      .product-area{
+      .product-area {
         .product-detalis {
           flex: 0 0 40%;
         }
@@ -980,13 +1051,13 @@
           position: relative;
           border: solid 0.2rem $primary;
           flex: 0 0 27%;
-          padding: .7rem 0;
+          padding: 0.7rem 0;
           padding-bottom: 0.5rem;
           font-size: 1.4rem;
           font-weight: 600;
           border-radius: 0.5rem;
           text-align: center;
-          h4{
+          h4 {
             font-size: 1.5rem !important;
           }
           .p-info {
@@ -1001,8 +1072,8 @@
             left: 50%;
             width: 72%;
             transform: translateX(-50%);
-            padding: .2rem 0rem;
-            border-radius: .3rem;
+            padding: 0.2rem 0rem;
+            border-radius: 0.3rem;
             margin-left: 0 !important;
             background-color: $primary;
           }
@@ -1012,4 +1083,266 @@
   }
 
   //final checkout area end//
+}
+
+.shoping-checkout-area {
+  .check-out-area {
+    background-color: $white;
+    padding: 0rem;
+    border-bottom: solid 0.5rem $primary;
+    text-align: center;
+    padding-bottom: 1rem;
+    box-shadow: $box-shadow-card-2;
+    position: sticky;
+    top: 11.7rem;
+    margin-bottom: 2rem;
+    .shiping-address-delivary {
+      margin: 1rem 1.5rem;
+      padding: 1rem 1.5rem;
+      background-color: $body-color;
+      text-align: left;
+      border-radius: 0.5rem;
+      box-shadow: $box-shadow-card-2;
+
+      h3 {
+        font-size: 1.7rem;
+        color: $text-color;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+      }
+      .address-contain {
+        border: solid 0.1rem $primary;
+        border-radius: 1rem;
+        background-color: $white-2;
+        padding: 1rem;
+        position: relative;
+        box-shadow: $box-shadow-card;
+        h4 {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+        span {
+          display: block;
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: $text-color;
+        }
+        .change-address {
+          position: absolute;
+          top: 6px;
+          right: 6px;
+          background-color: $secondary-3;
+          color: $white;
+          padding: 0.1rem 0.6rem;
+          border-radius: 0.5rem;
+          font-size: 1.2rem;
+          font-weight: 600;
+          border: solid 0.1rem $border-color;
+          box-shadow: $box-shadow-card-2;
+        }
+      }
+    }
+
+    .payment-method-check {
+      text-align: left;
+      padding: 1rem 1.5rem;
+      padding-bottom: 0.5rem;
+      background-color: $body-color;
+      margin: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: $box-shadow-card-2;
+      h4 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+      }
+      .custom-control {
+        padding: 0 !important;
+        margin-bottom: 1rem;
+        label {
+          border: solid 0.15rem $border-color;
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 1rem;
+          background-color: $white;
+          margin: 0;
+
+          .payment-option {
+            padding: 3rem 0;
+            padding-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .option {
+              font-size: 1.6rem;
+              font-weight: 600;
+              color: $text-color;
+              img {
+                width: 70%;
+                height: auto;
+              }
+            }
+            .note {
+              position: absolute;
+              font-size: 1.2rem;
+              bottom: 0rem;
+              left: 0rem;
+              border-top: solid 0.1rem $border-color;
+              width: 100%;
+              border-bottom-left-radius: 0.8rem;
+              border-bottom-right-radius: 0.8rem;
+            }
+          }
+        }
+
+        .custom-control-label::before {
+          width: 1.7rem;
+          height: 1.7rem;
+          left: 1rem;
+          top: 1rem;
+          border-color: $border-color;
+          border: solid 0.1rem;
+        }
+        .custom-control-label::after {
+          left: 1rem;
+          width: 1.7rem;
+          height: 1.7rem;
+          top: 1rem;
+          background-color: $primary-3;
+          background: 50% / 50% 50% no-repeat;
+        }
+
+        .custom-control-input:checked ~ .custom-control-label::after {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+          border: solid 0.1rem $primary-3;
+          border-radius: 50%;
+        }
+        .custom-control-input:checked ~ .custom-control-label {
+          border-color: $primary;
+          background-color: $white-2;
+          box-shadow: $box-shadow-card;
+          .option {
+            background-color: $white-2;
+          }
+          .note {
+            background-color: $white;
+            border-color: $primary;
+          }
+        }
+        .custom-control-input {
+          left: 1rem;
+        }
+      }
+      .paypal-online {
+        .custom-control-label {
+          .payment-option {
+            padding-top: 1rem !important;
+            padding-bottom: 2.5rem !important;
+          }
+        }
+      }
+    }
+
+    .content-area-palce-order {
+      padding: 1.5rem;
+      background-color: $white-2;
+      margin: 1rem 1.5rem;
+
+      border-radius: 0.5rem;
+
+      .sub-total-area {
+        margin-top: 0rem;
+      }
+      .sub-total-area,
+      .shipping-fee-area {
+        padding: 0.5rem 0;
+      }
+    }
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: 3.5rem;
+      display: block;
+      border-bottom: solid 0.1rem $border-color;
+      background-color: $primary;
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-color-3;
+      span {
+        margin: 0 0.2rem !important;
+      }
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-color-3;
+      span {
+        color: $hover-c;
+        margin-left: 0.5rem;
+      }
+    }
+    .total-area {
+      border-top: solid 0.2rem $border-color;
+      margin-top: 2rem;
+      padding: 1rem 0;
+      h2 {
+        font-size: 1.6rem;
+        color: $text-color;
+      }
+      h3 {
+        font-size: 1.6rem;
+        color: $text-color;
+      }
+    }
+    .checkout-button {
+      position: relative;
+
+      display: block;
+      line-height: 2.6rem;
+      background-color: $secondary-3;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.5rem 0;
+      border-radius: 0.3rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      text-align: center;
+      color: $body-color;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      box-shadow: $box-shadow-card-2;
+      border: solid 0.1rem $border-color;
+      transition: all 0.3s;
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5rem;
+        font-size: 2rem;
+
+        opacity: 0;
+        transition: all 0.3s;
+      }
+    }
+    .checkout-button:hover {
+      background-color: $hover-c;
+      color: $white;
+      i {
+        right: 3rem;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+      transition: all 0.3s;
+    }
+  }
 }
