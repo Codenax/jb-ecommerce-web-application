@@ -305,13 +305,17 @@
                     <div class="p-detalis">
                       <h4>Baseus H06 In-ear Stereo Bass Earphones Headphones sdfsaf sadfsadf sdafsda sadfsad fsdfsad
                         fsdf asdf asfds fa fsadf aasf fgas jack wired Earbuds (3.5mm)</h4>
-                      <div class="p-variation d-flex justify-content-between">
+                      <div class="p-variation d-flex">
                         <span>Variation :</span>
                         <span class="variation">128GB Black</span>
                       </div>
-                      <div class="p-quantity d-flex justify-content-between">
+                      <div class="p-quantity d-flex">
                         <span>Quantity :</span>
                         <span class="quantity">2</span>
+                      </div>
+                      <div class="p-payment-type d-flex">
+                        <span>Payment Type :</span>
+                        <span class="payment-type">Cash On Delivery</span>
                       </div>
                     </div>
                     <div class="product-price-detali d-flex">
@@ -355,7 +359,7 @@
                       </div>
                     </div>
                   </div>
-                    <a href="#" class="link-button">Give A Review</a>
+                    <a href="#" class="link-button"  data-toggle="modal" data-target="#giveReviewModal">Give A Review</a>
                   <div class="tracking-gatway-area d-flex justify-content-between">
                     <div class="shiping-address d-flex">
                       <h3>Delivery Address</h3>
@@ -385,6 +389,72 @@
 
 
 
+<!-- give review Modal  start-->
+<div class="modal fade give-review-modal" id="giveReviewModal" tabindex="-1" role="dialog" aria-labelledby="giveReviewModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><i class="far fa-grin-hearts"></i>Give a Review</h5>
+       
+      </div>
+      <div class="modal-body">
+        <form class="was-validated">
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked"
+              required>
+            <label class="custom-control-label" for="customControlValidation1"><img
+                src="assets/images/review-image/5star.png" alt=""></label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked"
+              required>
+            <label class="custom-control-label" for="customControlValidation2"><img
+                src="assets/images/review-image/4star.png" alt=""></label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked"
+              required>
+            <label class="custom-control-label" for="customControlValidation3"><img
+                src="assets/images/review-image/3star.png" alt=""></label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked"
+              required>
+            <label class="custom-control-label" for="customControlValidation4"><img
+                src="assets/images/review-image/2star.png" alt=""></label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customControlValidation5" name="radio-stacked"
+              required>
+            <label class="custom-control-label" for="customControlValidation5"><img
+                src="assets/images/review-image/1star.png" alt=""></label>
+          </div>
+
+          <div class="form-group">
+            <label for="yourComment">Write your comment</label>
+            <textarea class="form-control" id="yourComment" rows="3"></textarea>
+          </div>
+          <div class="input-group mb-3">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile02">
+              <label class="custom-file-label" for="inputGroupFile02">Upload photo of this product</label>
+            </div>
+           
+          </div>
+        </form>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="primary-btn close-btn" data-dismiss="modal">Close</button>
+        <button type="button" class="primary-btn ">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- give review Modal  end-->
 
   <!-- contact end -->
   <footer class="footer-section">

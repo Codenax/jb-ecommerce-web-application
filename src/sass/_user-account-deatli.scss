@@ -84,6 +84,7 @@
       }
     }
   }
+
   .right-side-area {
     .profile-area {
       background-color: $white;
@@ -139,6 +140,7 @@
       background-color: $white;
       padding: 1.5rem;
       margin-top: 3rem;
+      margin-bottom: 2rem;
       text-align: right;
       box-shadow: $box-shadow-card-2;
       .address {
@@ -235,26 +237,17 @@
         margin-top: 2rem;
       }
     }
-
-    .accounts {
-      margin-bottom: 3rem;
-      .content-area {
-        text-align: center;
-        padding: 5rem 3rem;
-        p {
-          font-size: 4rem;
-        }
-      }
-    }
   }
+
+  ////--all heading left area start---///
   .all-heading-left {
     padding-bottom: 2rem;
     margin-bottom: 0rem;
     border: 0;
     text-align: left;
-    border-bottom: solid .4rem $primary;
-   
-    h3{
+    border-bottom: solid 0.4rem $primary;
+
+    h3 {
       font-weight: 600;
       color: $text-color-3;
       font-size: 2rem;
@@ -264,31 +257,29 @@
     }
     h3:after {
       content: "";
-      border-bottom: solid .1rem $primary;
+      border-bottom: solid 0.1rem $primary;
       position: absolute;
       background-color: $primary;
       height: 0.2rem;
       bottom: -7px;
       left: 0;
       width: 50%;
-      z-index: 9999;
+      z-index: 1;
     }
     h3:before {
       content: "";
-      border-bottom: solid .1rem $primary;
+      border-bottom: solid 0.1rem $primary;
       position: absolute;
       background-color: $primary;
       height: 0.2rem;
       bottom: -3px;
       left: 0;
       width: 75%;
-      z-index: 9999;
+      z-index: 1;
     }
-  
-   
   }
-  .all-heading-left.with-p{
-    padding-bottom: .5rem;
+  .all-heading-left.with-p {
+    padding-bottom: 0.5rem;
     p {
       font-weight: 600;
       font-size: 1.2rem;
@@ -296,15 +287,17 @@
       margin-top: 1rem;
     }
   }
+  ////--all heading left area end---///
 
+  ////--single-heading-back start---///
   .single-heading-back {
-    padding:1rem 1.5rem;
+    padding: 1rem 1.5rem;
     background-color: $white;
     box-shadow: $box-shadow-card-2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid .4rem $primary;
+    border-bottom: solid 0.4rem $primary;
     .all-heading {
       padding-bottom: 0rem;
       margin-bottom: 0rem;
@@ -329,9 +322,8 @@
           transition: all 0.2s;
         }
       }
-     
     }
-    h3{
+    h3 {
       font-weight: 600;
       color: $text-color-3;
       font-size: 2rem;
@@ -340,33 +332,31 @@
     }
     h3:after {
       content: "";
-      border-bottom: solid .1rem $secondary-2;
+      border-bottom: solid 0.1rem $secondary-2;
       position: absolute;
       background-color: $secondary-2;
       height: 0.15rem;
       bottom: -8px;
       right: 0;
       width: 50%;
-      z-index: 9999;
+      z-index: 1;
     }
     h3:before {
       content: "";
-      border-bottom: solid .1rem $secondary-2;
+      border-bottom: solid 0.1rem $secondary-2;
       position: absolute;
       background-color: $secondary-2;
       height: 0.15rem;
       bottom: -4px;
       right: 0;
       width: 75%;
-      z-index: 9999;
+      z-index: 1;
     }
   }
-
-
+  ////--single-heading-back end---///
 
   // product purchase area start//
   .purchase-area {
-   
     .search-ber {
       width: 100%;
       box-shadow: $box-shadow-card-2;
@@ -462,10 +452,12 @@
             font-weight: 600;
             padding-right: 0.5rem;
             text-align: left;
-            flex: 0 0 7rem;
+            //flex: 0 0 0;
+            //display: block;
+            
           }
           .variation,
-          .quantity {
+          .quantity, .payment-type {
             text-align: left !important;
             flex: 1 0 0;
           }
@@ -1036,7 +1028,7 @@
   }
   //check out oparation area end//
 
-  //final checkout area start//
+  //checkout area start//
   .p-checkout {
     .single-product {
       .product-area {
@@ -1082,9 +1074,8 @@
     }
   }
 
-  //final checkout area end//
+  //checkout area end//
 }
-
 .shoping-checkout-area {
   .check-out-area {
     background-color: $white;
@@ -1346,3 +1337,150 @@
     }
   }
 }
+
+///    add address modal start ///
+.add-address {
+  z-index: 9999999;
+  .modal-dialog {
+    width: 60rem !important;
+    .modal-content {
+      margin-top: 2rem;
+    }
+  }
+  form {
+    padding-right: 3rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    i {
+      margin-right: 0.5rem;
+      color: $primary;
+    }
+  }
+  .modal-footer {
+    border-bottom: solid 0.4rem $primary !important;
+    justify-content: right !important;
+    .primary-btn {
+      margin: 0 !important;
+      margin-right: 0.5rem !important;
+    }
+    .close-btn {
+      background-color: $text-color-3;
+    }
+    .close-btn:hover {
+      background-color: $text-color;
+    }
+  }
+  .form-group {
+    margin-bottom: 1.5rem !important;
+    display: flex;
+    label {
+      flex: 0 0 35% !important;
+      color: $text-color-2;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: right;
+      padding-right: 3rem;
+    }
+    textarea,
+    input {
+      flex: 0 0 70% !important;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    input::placeholder {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-color-2;
+    }
+
+    textarea {
+      color: $text-color;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+///    add address modal end ///
+///    give-review-modal start ///
+.give-review-modal {
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    i {
+      color: $primary;
+      margin-right: 0.5rem;
+    }
+  }
+  .modal-content {
+    .modal-body {
+      .was-validated {
+        text-align: center;
+        padding-top: 2rem;
+        .custom-control {
+          margin-top: 1rem;
+          label {
+            cursor: pointer;
+            img {
+              width: 12rem;
+            }
+          }
+        }
+        .form-group {
+          text-align: left;
+          padding: 2rem 4rem;
+          padding-bottom: 0;
+          label {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $text-color-2;
+          }
+          textarea{
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $text-color;
+            border-color: $primary;
+          }
+        }
+        .input-group{
+          .custom-file{
+            margin: 0 4rem !important;
+            input{
+              font-size: 1.6rem;
+  
+            }
+            label{
+              font-size: 1.5rem;
+              font-weight: 600;
+              color: $text-color-2;
+              border-color: $primary;
+            }
+            label:after{
+              background-color: $primary;
+              color: $white;
+            }
+          }
+        
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border-bottom: solid 0.4rem $primary !important;
+    justify-content: right !important;
+    .primary-btn {
+      margin: 0 !important;
+      margin-right: 0.5rem !important;
+    }
+    .close-btn {
+      background-color: $text-color-3;
+    }
+    .close-btn:hover {
+      background-color: $text-color;
+    }
+  }
+}
+
+///    give-review-modal end ///
