@@ -3165,15 +3165,101 @@ a:hover {
           flex: 0 0 40%;
 }
 
+.account-detalis .p-checkout .single-product .middle-form {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  padding: 0;
+}
+
+.account-detalis .p-checkout .single-product .middle-form .p-quantity {
+  position: relative;
+  padding: 0 !important;
+}
+
+.account-detalis .p-checkout .single-product .middle-form .p-quantity input {
+  border: 0;
+  text-align: center;
+}
+
+.account-detalis .p-checkout .single-product .middle-form .p-quantity input:focus {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.account-detalis .p-checkout .single-product .middle-form .p-quantity .update-but {
+  position: absolute;
+  border: 0;
+  background-color: #ff4d00d2;
+  font-size: 1.2rem;
+  border: solid 0.1rem #ff4d00d2;
+  padding: 0.3rem 0.8rem;
+  width: 80%;
+  color: #fff;
+  font-weight: 700;
+  -webkit-border-radius: 0.5rem;
+          border-radius: 0.5rem;
+  bottom: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.account-detalis .p-checkout .single-product .middle-form .p-quantity .update-but:hover {
+  background-color: #fff;
+  color: #ff4d00d2;
+  border: solid 0.1rem #ff4d00d2;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.account-detalis .p-checkout .single-product .del-action-form {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10%;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  padding: 0;
+  text-align: center;
+}
+
+.account-detalis .p-checkout .single-product .del-action-form button {
+  border: solid 0.1rem #acaaaa;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.8rem;
+  color: #acaaaa;
+  font-weight: 700;
+  -webkit-border-radius: 0.5rem;
+          border-radius: 0.5rem;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.account-detalis .p-checkout .single-product .del-action-form button:hover {
+  background-color: #acaaaa;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 .account-detalis .p-checkout .single-product .p-detalis-right-side .product-price,
 .account-detalis .p-checkout .single-product .p-detalis-right-side .p-quantity,
 .account-detalis .p-checkout .single-product .p-detalis-right-side .total-parice {
   position: relative;
   border: solid 0.2rem #40ceb2;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 27%;
-      -ms-flex: 0 0 27%;
-          flex: 0 0 27%;
+  -webkit-flex: 0 0 31%;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
   padding: 0.7rem 0;
   padding-bottom: 0.5rem;
   font-size: 1.4rem;
