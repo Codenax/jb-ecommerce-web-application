@@ -125,11 +125,19 @@
         flex: 0 0 12rem;
       }
       .variation-count {
-        .v-list {
-          width: auto;
-          display: inline-block;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        .custom-control{
+          padding: 0;
+          input:checked~.custom-control-label{
+            color: $hover-c;
+            border-color: $hover-c;
+            transition: all 0.2s;
+          }
+
         }
-        a {
+          .custom-control-label{
           display: inline-block;
           font-size: 1.5rem;
           color: $text-color-3;
@@ -138,16 +146,13 @@
           padding: 0.5rem 1rem;
           margin-right: 1rem;
           margin-top: 1rem;
+          cursor: pointer;
           transition: all 0.2s;
+          
         }
-        .select {
-          color: $hover-c;
-          border-color: $hover-c;
-        }
-        a:hover {
-          color: $hover-c;
-          border-color: $hover-c;
-          transition: all 0.2s;
+        .custom-control-label::before,.custom-control-label::after{
+          left: 0;
+         opacity: 0;
         }
       }
     }

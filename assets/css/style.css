@@ -1512,12 +1512,33 @@ a:hover {
           flex: 0 0 12rem;
 }
 
-.section-product-detalis .product-briefing-area .product-variation .variation-count .v-list {
-  width: auto;
-  display: inline-block;
+.section-product-detalis .product-briefing-area .product-variation .variation-count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
-.section-product-detalis .product-briefing-area .product-variation .variation-count a {
+.section-product-detalis .product-briefing-area .product-variation .variation-count .custom-control {
+  padding: 0;
+}
+
+.section-product-detalis .product-briefing-area .product-variation .variation-count .custom-control input:checked ~ .custom-control-label {
+  color: #ff4d00;
+  border-color: #ff4d00;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.section-product-detalis .product-briefing-area .product-variation .variation-count .custom-control-label {
   display: inline-block;
   font-size: 1.5rem;
   color: #8b8b8b;
@@ -1526,22 +1547,15 @@ a:hover {
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
+  cursor: pointer;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.section-product-detalis .product-briefing-area .product-variation .variation-count .select {
-  color: #ff4d00;
-  border-color: #ff4d00;
-}
-
-.section-product-detalis .product-briefing-area .product-variation .variation-count a:hover {
-  color: #ff4d00;
-  border-color: #ff4d00;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+.section-product-detalis .product-briefing-area .product-variation .variation-count .custom-control-label::before, .section-product-detalis .product-briefing-area .product-variation .variation-count .custom-control-label::after {
+  left: 0;
+  opacity: 0;
 }
 
 .section-product-detalis .product-briefing-area .quantity-area {
