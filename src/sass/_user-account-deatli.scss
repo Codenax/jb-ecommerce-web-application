@@ -27,6 +27,7 @@
         font-weight: 600;
         color: $text-color;
         margin: 0.5rem 0;
+        text-transform: capitalize;
       }
       .change-pic {
         color: $text-color-2;
@@ -34,6 +35,19 @@
         font-weight: 600;
         padding: 0 0.5rem;
         border: solid 0.1rem $border-color;
+      }
+      .input-group{
+        .custom-file{
+          cursor: pointer;
+          input{
+            cursor: pointer;
+          }
+          .custom-file-label{
+            font-weight: 600;
+            color: $text-color-3;
+            cursor: pointer !important;
+          }
+        }
       }
     }
     .side-menu-area {
@@ -897,6 +911,7 @@
         border: 0;
         margin: 0;
         padding: 0;
+        border: 0 !important; 
         .product-detalis {
           flex: 1 0 0;
           justify-content: center;
